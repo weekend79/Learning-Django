@@ -27,7 +27,7 @@ SECRET_KEY = 'f$9(#3g*&-=_+fl@ruwkjjzevcgq8+@8v$1c3+3=fu&zwpv@9q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['school-simple-todo.heroku.com']
+ALLOWED_HOSTS = ['school-simple-todo.herokuapp.com']
 
 
 # Application definition
