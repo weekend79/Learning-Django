@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 import dj_database_url
 
+
 if os.environ.get('DEVELOPMENT'):
     development = True
 else:
@@ -26,8 +27,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'f$9(#3g*&-=_+fl@ruwkjjzevcgq8+@8v$1c3+3=fu&zwpv@9q'
+
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', "Env value not loaded")
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development

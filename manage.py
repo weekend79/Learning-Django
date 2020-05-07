@@ -2,6 +2,12 @@
 import os
 import sys
 
+
+# Import env file
+if os.path.exists("env.py"):
+    import env
+
+
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_todo.settings")
     try:
